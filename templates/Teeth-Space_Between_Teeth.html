@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <title>ORTHODONTIC DISEASE</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .border img {
+        border-radius: 15px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+    <div>
+      <h1 style="text-align: center; font-size: 4rem">
+        Predict Orthodontic Disease & Get Cure
+      </h1>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container my-2">
+      <div class="row mb-5">
+        <div class="col-sm" style="margin-bottom: 23px">
+          <span class="border border-primary">
+            <img
+              src="{{url_for('static',filename = 'images/Teeth-Space_Between_Teeth.JPG' )}}"
+              alt="User Image"
+              style="width: 500px; height: 500px"
+            />
+          </span>
+        </div>
+
+        <div class="col-sm">
+          <div>
+            <h1
+              style="
+                padding: 15px;
+                background-color: rgb(15, 15, 15);
+                color: white;
+              "
+              class="text-center mb-5 content-h1 rounded"
+            >
+              {{pred_output}}
+            </h1>
+          </div>
+          <div class="details">
+            <h4><b> Treatment : </b></h4>
+            <h3>Space Between Teeth - Medical Treatment</h3>
+            <br />
+            <h6>
+              <strong>Space Between Teeth - </strong>Treatment for a diastema
+              may or may not be necessary depending on the underlying cause. For
+              some people, a diastema is nothing more than a cosmetic issue and
+              it doesn’t indicate a problem like gum disease.<br /><br />
+
+              Braces are a common treatment for diastema. Braces have wires and
+              brackets that put pressure on teeth and slowly move them together,
+              which closes a gap. Invisible or removable braces may also fix
+              some cases of diastema.<br /><br />
+
+              If you don’t want braces, talk to your doctor about cosmetic
+              procedures to fill gaps between your teeth. Veneers or bonding is
+              another option. This procedure uses a tooth-colored composite
+              which can either fill gaps or fit over teeth to improve the
+              appearance of your smile. This procedure is also useful for fixing
+              a cracked or chipped tooth. You may also be a candidate for a
+              dental bridge, which can replace a missing tooth or correct a
+              gap.<br /><br />
+
+              If the gums above your two upper front teeth overextend and cause
+              a gap, surgery to remove excess tissue can correct the gap. You
+              may need braces to fully close larger gaps.<br /><br />
+
+              If your doctor diagnoses you with gum disease, you must receive
+              treatment to stop the infection before you seek treatment to close
+              a gap. Treatment for gum disease varies, but may include scaling
+              and root planing to remove hardened plaque (tartar) from above and
+              below the gums. This eliminates the bacteria causing the
+              disease.<br /><br />
+
+              Severe gum disease may require surgery to remove tartar that has
+              accumulated deep within the gums. Surgery can also involve bone
+              and tissue regeneration.<br /><br />
+            </h6>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

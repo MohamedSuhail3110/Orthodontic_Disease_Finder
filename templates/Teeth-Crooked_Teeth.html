@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <title>ORTHODONTIC DISEASE</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .border img {
+        border-radius: 15px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+    <div>
+      <h1 style="text-align: center; font-size: 4rem">
+        Predict Orthodontic Disease & Get Cure
+      </h1>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container my-2">
+      <div class="row mb-5">
+        <div class="col-sm" style="margin-bottom: 23px">
+          <span class="border border-primary">
+            <img
+              src="{{url_for('static',filename = 'images/Teeth-Crooked_Teeth.JPG' )}}"
+              alt="User Image"
+              style="width: 500px; height: 500px"
+            />
+          </span>
+        </div>
+
+        <div class="col-sm">
+          <div>
+            <h1
+              style="
+                padding: 15px;
+                background-color: rgb(15, 15, 15);
+                color: white;
+              "
+              class="text-center mb-5 content-h1 rounded"
+            >
+              {{pred_output}}
+            </h1>
+          </div>
+          <div class="details">
+            <h4><b> Treatment : </b></h4>
+            <h3>The two most effective methods to fix crooked teeth are</h3>
+            <br />
+            <h6>
+              <strong>Braces - </strong>Braces are a type of an orthodontic
+              appliance that consist of brackets, bands, and wires. They apply
+              constant pressure on the jaw over an extended period, which makes
+              it adapt to the pressure in a certain direction, causing it to
+              move into the desired position. There are three types of braces
+              available including metal braces, ceramic braces, and lingual
+              braces. You can talk to your orthodontist and know what may be the
+              most appropriate teeth alignment solution for you based on the
+              results of your oral examination.
+            </h6>
+            <br />
+            <h6>
+              <strong>Invisalign - </strong>Invisalign is basically invisible
+              braces. The treatment includes clear or transparent trays that are
+              custom-created to fit over your teeth set. Your orthodontist will
+              create several molds, and you will have to move from one mold to
+              another until your teeth finally move into the correct position.
+              Adults often go for Invisalign since they are clear and can easily
+              go unnoticed. However, it's the higher cost of Invisalign that
+              makes braces a more practical solution. If your teeth are crooked
+              and you think that they can potentially lead to severe health
+              issues or if you simply want a straighter and healthier smile,
+              book an appointment with the experts at Putnam Orthodontics. Learn
+              what is the best orthodontic treatment for you and take the first
+              step to your best smile.
+            </h6>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
